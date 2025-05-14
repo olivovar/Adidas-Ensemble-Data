@@ -3,4 +3,5 @@
 __pycache__/
 .DS_Store
 venv/
-
+instagram data/raw instagram data/
+tiktok data/raw tiktok data/

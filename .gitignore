@@ -1,7 +1,5 @@
 *.zip
 *.pdf
-ensemble_data/
-instagram data/
 __pycache__/
 .DS_Store
 venv/

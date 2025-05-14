@@ -1,55 +1,49 @@
-README.txt  
-Olivia Pivovar | BACSS Lab Research Fellow Co-op Trial  
-Ensemble Data Analysis – Code Repository
+# Ensemble Data Analysis – Adidas Social Media
 
-This repository contains the Python scripts, visualization outputs, and cleaned datasets used to analyze Adidas' social media engagement on TikTok and Instagram.
+**Author:** Olivia Pivovar  
+**Project:** Analysis of Adidas' social media engagement on TikTok and Instagram.
 
----
-
-FILES INCLUDED:
-
-1. tiktok_analysis.py  
-   - Parses raw TikTok API data from Ensemble.  
-   - Cleans, structures, and analyzes engagement metrics.  
-   - Generates visualizations and exports cleaned TikTok data as CSV.
-
-2. instagram_analysis.py  
-   - Parses raw Instagram API data from Ensemble.  
-   - Extracts nested post structures and computes engagement metrics.  
-   - Includes logic to filter out malformed or empty files.
-
-3. compare_platforms.py  
-   - Loads cleaned TikTok and Instagram datasets.  
-   - Compares engagement trends across platforms by hour, emoji use, and caption length.  
-   - Creates comparative charts and summary statistics.
-
-4. cleaned_tiktok.csv  
-   - Cleaned TikTok dataset with post-level metrics and derived features.
-
-5. cleaned_instagram.csv  
-   - Cleaned Instagram dataset with post-level metrics and derived features.
-
-6. PNG Visualizations (in folders):  
-   - Exported bar charts, scatter plots, and engagement curves used in the final report.  
-   - Stored in separate folders for TikTok, Instagram, and comparative analysis.
+This repository contains the Python scripts, visualization outputs, and cleaned datasets used to analyze engagement trends on both platforms using data collected via the Ensemble API.
 
 ---
 
-HOW TO RUN:
+## Included Files
 
-1. Open a terminal or code editor.  
-2. Update file paths in the scripts if needed — some variables reference directories on the local machine (e.g., "/Users/oliviapivovar/Desktop/ensemble_data/").  
-3. Ensure the following Python packages are installed:  
-   - pandas, matplotlib, emoji, json, os, zipfile  
-4. Run the scripts in the following order:  
-   - python3 tiktok_analysis.py  
-   - python3 instagram_analysis.py  
-   - python3 compare_platforms.py  
+### 1. `tiktok_analysis.py`
+- Parses raw TikTok API data from Ensemble.
+- Cleans, structures, and analyzes engagement metrics.
+- Generates visualizations and exports a cleaned TikTok dataset as CSV.
+
+### 2. `instagram_analysis.py`
+- Parses raw Instagram API data from Ensemble.
+- Extracts nested post structures and computes engagement metrics.
+- Includes error handling for malformed or empty files.
+
+### 3. `compare_platforms.py`
+- Loads cleaned TikTok and Instagram datasets.
+- Compares engagement trends by hour, emoji use, caption length, and more.
+- Outputs comparative charts and summary statistics.
+
+### 4. `cleaned_tiktok.csv`
+- Final, cleaned TikTok dataset with post-level metrics and derived features.
+
+### 5. `cleaned_instagram.csv`
+- Final, cleaned Instagram dataset with post-level metrics and derived features.
+
+### 6. 📈 Visualization Outputs (in folders)
+- Bar charts, scatter plots, and engagement curves.
+- Organized by platform: `TikTok Charted Data`, `Instagram Charted Data`, and `Compare Charted Data`.
 
 ---
 
-NOTES:
+## 🛠 How to Run the Scripts
 
-- All code, data processing, and visualizations were written independently.  
-- Generative AI (ChatGPT) was used for idea generation and language refinement only.  
-  All insights were verified manually, and AI-generated suggestions were only used when supported by the data. Full documentation is provided in Appendix A of the report.
+1. Open a terminal or code editor.
+2. Update any file paths in the scripts — some reference local directories (e.g., `/Users/oliviapivovar/Desktop/ensemble_data/`).
+3. Ensure the following Python packages are installed:
+   - `pandas`, `matplotlib`, `emoji`, `json`, `os`, `zipfile`
+4. Run the scripts in the following order:
+   ```bash
+   python3 tiktok_analysis.py
+   python3 instagram_analysis.py
+   python3 compare_platforms.py
